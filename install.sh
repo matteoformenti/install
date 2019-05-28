@@ -35,5 +35,8 @@ yes | sudo gdebi google-chrome-stable_current_amd64.deb;
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.14.5179.tar.gz -O toolbox.tar.gz;
 tar -xf toolbox.tar.gz;
 composer global require laravel/installer;
-
 sudo apt install -y php-bz2 php-common php-composer-ca-bundle php-composer-semver php-composer-spdx-licenses php-composer-xdebug-handler php-curl php-fpm php-gd php-http php-json-schema php-mbstring php-mysql php-pear php-php-gettext php-phpseclib php-propro php-psr-log php-raphf php-symfony-console php-symfony-debug php-symfony-filesystem php-symfony-finder php-symfony-process php-tcpdf php-xml php-zip
+
+mkdir $HOME/Programs && cd $HOME/Programs;
+wget https://download.ultimaker.com/cura_open_beta/Ultimaker_Cura-4.1.0-BETA.AppImage -O Cura.AppImage;
+wget https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_0.19-16854-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage -O FreeCAD.AppImage;
