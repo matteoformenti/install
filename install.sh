@@ -21,6 +21,7 @@ sudo apt install oracle-java12-installer;
 sudo apt -y install gtk2-engines-murrine gtk2-engines-pixbuf flat-remix-gnome flat-remix-gtk flat-remix;
 sudo tlp start
 sudo powertop --auto-tune
+sudo apt install -y php-bz2 php-common php-composer-ca-bundle php-composer-semver php-composer-spdx-licenses php-composer-xdebug-handler php-curl php-fpm php-gd php-http php-json-schema php-mbstring php-mysql php-pear php-php-gettext php-phpseclib php-propro php-psr-log php-raphf php-symfony-console php-symfony-debug php-symfony-filesystem php-symfony-finder php-symfony-process php-tcpdf php-xml php-zip
 
 mkdir /tmp/downloads;
 cd /tmp/downloads;
@@ -37,7 +38,6 @@ yes | sudo gdebi google-chrome-stable_current_amd64.deb;
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.14.5179.tar.gz -O toolbox.tar.gz;
 tar -xf toolbox.tar.gz;
 composer global require laravel/installer;
-sudo apt install -y php-bz2 php-common php-composer-ca-bundle php-composer-semver php-composer-spdx-licenses php-composer-xdebug-handler php-curl php-fpm php-gd php-http php-json-schema php-mbstring php-mysql php-pear php-php-gettext php-phpseclib php-propro php-psr-log php-raphf php-symfony-console php-symfony-debug php-symfony-filesystem php-symfony-finder php-symfony-process php-tcpdf php-xml php-zip
 
 mkdir $HOME/Programs && cd $HOME/Programs;
 wget https://download.ultimaker.com/cura_open_beta/Ultimaker_Cura-4.1.0-BETA.AppImage -O Cura.AppImage;
