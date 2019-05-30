@@ -14,7 +14,7 @@ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add
 echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list;
 
 sudo apt -y update;
-sudo apt -y install powertop transmission tlp tlp-rdw php mysql-server apache2 htop gnome-tweaks git gdebi unzip nodejs composer fonts-firacode chrome-gnome-shell gnome-tweak-tool elasticsearch;
+sudo apt -y install powertop transmission tlp tlp-rdw php mysql-server apache2 htop gnome-tweaks git gdebi unzip nodejs composer fonts-firacode chrome-gnome-shell gnome-tweak-tool elasticsearch gnome-session;
 sudo apt -y update;
 sudo apt -y upgrade;
 sudo apt install oracle-java12-installer;
