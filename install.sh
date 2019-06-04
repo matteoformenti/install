@@ -25,12 +25,12 @@ sudo apt install -y php-bz2 php-common php-composer-ca-bundle php-composer-semve
 
 mkdir /tmp/downloads;
 cd /tmp/downloads;
-git clone htthttp://admin.itmakers.org/ps://github.com/vinceliuice/Qogir-theme;
+git clone htts://github.com/vinceliuice/Qogir-theme;
 sudo ./Quoigr-theme/Install -m -c;
 wget https://go.microsoft.com/fwlink/?LinkID=760868 -O vscode.deb;
 yes | sudo gdebi vscode.deb;
-wget https://www.privateinternetaccess.com/installer/download_installer_linux;
-tar -xzf pia-v82-installer-linux.tar.gz;
+wget https://installers.privateinternetaccess.com/download/pia-linux-1.2-02681.run -O pia.tar.gz;
+tar -xzf pia.tar.gz;
 ./pia-v82-installer-linux.sh;
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
