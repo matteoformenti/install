@@ -1,10 +1,10 @@
-alias l="ls -l -h -g"
+echo 'alias l="ls -l -h -g"
 alias ll="l -a"
 alias artisan="php artisan"
 alias serve="artisan serve"
 alias tinker="artisan tinker"
 alias dump-server="artisan dump-server"
-alias laravel="$HOME/.config/composer/vendor/laravel/installer/laravel"
+alias laravel="$HOME/.config/composer/vendor/laravel/installer/laravel"' | tee .bash_aliases
 
 
 sudo apt -y update;
