@@ -13,11 +13,11 @@ sudo apt -y update;
 sudo apt -y upgrade;
 
 sudo apt -y install software-properties-common apt-transport-https;
-sudo -y add-apt-repository ppa:ondrej/php;
 sudo apt -y update;
 
 sudo apt -y install php7.4 mysql-server htop git gdebi unzip apache2 curl;
 sudo apt -y install php-bz2 php-common php-curl php-gd php-imagick php-http php-json-schema php-mbstring php-mysql php-mysqli php-pear php-xml php-zip;
+sudo apt -y isntall gnome-tweak-tool gnome-session;
 
 # install chrome
 cd /tmp;
@@ -29,6 +29,12 @@ cd ~;
 cd /tmp;
 wget https://getcomposer.org/installer;
 sudo php composer-setup.php --install-dir=/usr/bin --filename=composer;
+cd ~;
+
+# install theme
+cd /tmp;
+git clone htts://github.com/vinceliuice/Qogir-theme;
+sudo ./Quoigr-theme/Install -m -c;
 cd ~;
 
 # install node
@@ -45,5 +51,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt update;
 sudo apt -y install code;
 
-echo "scarica toolbox https://www.jetbrains.com/toolbox-app/"
+echo "download toolbox https://www.jetbrains.com/toolbox-app/";
+echo "install estension https://extensions.gnome.org/extension/1160/dash-to-panel/";
+echo "install extension https://extensions.gnome.org/extension/448/remove-rounded-corners/";
 
